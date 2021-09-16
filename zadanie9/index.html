@@ -1,0 +1,51 @@
+<html>
+    <head>
+        
+        <script type="text/javascript">
+         function dni_stycznia(){
+             
+        var D1_ska=prompt("Dzien_1_stycznia=","");
+        var G1_ska=prompt("Godzina_w_wdniu_1","")
+		var D2_ska=prompt("Dzien_2_stycznia=","");
+        var G2_ska=prompt("Godzina_w_wdniu_2","")
+		
+                             var a=parseFloat(D1_ska);
+                             var b=parseFloat(D2_ska);
+                             var c=parseFloat(G1_ska);
+                             var d=parseFloat(G2_ska);
+            if (c>=1&&c<=24) {
+                var godz1;
+            godz1 = 24-c;
+            }else{document.write("zla godzina")}
+
+            
+            if (d>=1&&d<=24) {
+                var godz2;
+            godz2= 24-d;
+            }else{document.write("zla godzina")}
+            
+		  if(1<=a&&b<=31&&a<b){
+              var czas;
+              czas = (b-a)*86400;
+              var czas_z_godz;
+              czas_z_godz=czas + (godz1*3600) + (godz2*3600)
+               document.write("<p style='color: green;font-size: 49px';>")
+		 document.write("Od godziny " +c+ " dnia " +a+ " do godziny " +d+ " dnia " +b+ " minelo: " +czas_z_godz+ " sekund <br>" );
+          }else{
+              document.write("podano zle dane")
+          }
+         
+         }
+        </script>
+
+         
+      
+
+    </head>
+ <body>
+    
+    <input type="button" onclick="dni_stycznia()" value="Liczmy!" />  
+             
+ </body>
+</html>
+
