@@ -1,0 +1,26 @@
+
+<html>
+<head>
+<script type="text/javascript">
+function obliczenia() {
+    var liczba1=prompt("liczba a");
+    var liczba2=prompt("liczba b");
+    var la=parseFloat(liczba1);
+    var lb=parseFloat(liczba2);
+    var suma = la + lb;
+    var sumado3 = Math.pow(suma, 3);
+    var ado3 = Math.pow(la, 3);
+    var bdo3 = Math.pow(lb, 3);
+    var ado2 = Math.pow(la, 2);
+    var bdo2 = Math.pow(lb, 2);
+    var mnozenie1 = 3 * ado3 * lb;
+    var mnozenie2 = 3 * la * bdo2;
+    document.write("<p style='color: navy;font-size: 50px';>")
+    document.write(sumado3+" = "+ado3+ " + " +mnozenie1+ " + " +mnozenie2+ " + " +bdo3);
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="obliczenia()" value="Liczymy!"/>    
+</body>
+</html>

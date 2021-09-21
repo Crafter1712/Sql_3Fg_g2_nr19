@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function liczenie()
+{
+var liczba1=prompt("x1");
+var liczba2=prompt("x2");
+var x1ska=parseFloat(liczba1);
+var x2ska=parseFloat(liczba2);
+document.write("x1 = " +x1ska);
+document.write("<br>x2 = " +x2ska+ "<br>");
+var razy3 = 3*Math.pow(x1ska, 5/7);
+document.write("y = " +razy3+ "<br>");
+var sinx1 = Math.sin(x1ska);
+var cosx1 = Math.cos(x1ska);
+var wypisz2 = 2*cosx1 + 2*sinx1;
+document.write("y1 = "+wypisz2+ "<br>");
+var dzialanie1 = (Math.pow(x1ska, 5)) + 2 * (Math.pow(x2ska, 4));
+var dzialanie2 = Math.abs((x1ska - x2ska));
+var wynik = Math.sqrt(dzialanie1, 3) * dzialanie2;
+document.write("y3 = " +wynik)
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="liczenie()" value="Liczmy!"/>
+</body>
+</html>
