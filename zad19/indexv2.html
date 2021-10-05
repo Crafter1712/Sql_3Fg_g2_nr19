@@ -1,0 +1,51 @@
+<html> 
+<head> 
+<title>
+  
+</title>
+  <script language="JavaScript">
+function V(a,b)
+{
+    a_liczba=parseFloat(a)
+    b_liczba=parseFloat(b)
+    V_wynik=a_liczba+a_liczba+b_liczba+b_liczba
+    document.getElementsByName('obw')[0].value=V_wynik.toFixed(2);   /* na dokument  */
+    alert("obw="+V_wynik.toFixed(2)+" cm");                                                  /*do okna Alert */
+    pokaz1.innerHTML="obw="+V_wynik.toFixed(2)+" cm"+"<br>";         /* do tabeli */
+ }
+function P(a,b)
+{
+    a_liczba=parseFloat(a)
+    b_liczba=parseFloat(b)
+   P_wynik=a_liczba*b_liczba
+   document.getElementsByName('pole')[0].value=P_wynik.toFixed(2);
+   alert("P="+P_wynik.toFixed(2)+" cm^2");
+   pokaz2.innerHTML="P="+P_wynik.toFixed(2)+"cm^2";
+}
+       </script>
+</head> 
+<body> 
+ Pobliczanie V   i    Pc walca
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.BokA.value,this.BokB.value); P(this.BokA.value,this.BokB.value);return false">  
+ Podaj a=
+<input  size="6"  name="BokA">
+ Podaj b=
+<input  size="6"  name="BokB">
+<br>
+<br>
+<input  TYPE="submit"  Value="oblicz" >
+<br>
+<br>
+ obw=
+<input  size="6"  name="obw">
+ P=
+<input  size="6"  name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+
+</body> 
+</html>
