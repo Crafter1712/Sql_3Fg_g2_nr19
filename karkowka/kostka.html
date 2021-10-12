@@ -1,0 +1,38 @@
+<html> 
+<head> 
+  <script language="JavaScript">
+function V(scianki,rzuty)
+{
+    sciank=parseFloat(scianki);
+    rzut=parseFloat(rzuty)
+    var rzutow
+    for (var i=0;i<=rzut;i++)
+    {
+     rzutow= Math.floor(Math.random()*(sciank-1))+1;
+        document.write(rzutow)
+        rzutow =parseFloat(rzutow);
+        if (rzutow==scianki) {
+            document.write(":)")
+        }
+    }   
+ }
+       </script>
+</head> 
+<body> 
+
+<br> <br>
+<form name="formularz" action="..." onsubmit="V(this.scian.value,this.rzut.value);return false">  
+ilosc scianek
+<input  size="6"  name="scian">
+liczba rzutow
+<input  size="6"  name="rzut">
+<br>
+<br>
+<input  TYPE="submit"  Value="oblicz" >
+<br>
+<br>
+ 
+
+</form>
+</body> 
+</html>
