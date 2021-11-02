@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function koty(nazwa, rasa, wiek)
+        {
+            this.nazwa = nazwa;
+            this.rasa = rasa;
+            this.wiek = wiek;
+            this.show = function (){
+                document.write("Ten kot ma na imie " +this.nazwa + " jest on rasy "+this.rasa+" i ma " +this.wiek+"lat")
+            }
+        }
+         perski = new koty("stefan", "perski", 5);
+         dachowiec = new koty("adam", "dahcowiec", 6);
+        </script>
+    </head>
+    <body>
+        <input type="button" value="perski" onclick="perski.show()">
+        <input type="button" value="dachowiec" onclick="dachowiec.show()">
+    </body>
+</html>

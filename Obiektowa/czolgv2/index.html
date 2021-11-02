@@ -1,0 +1,43 @@
+<head>
+    <script type="text/javascript">
+        function czolg(nazwa, rok, wojna, pancerz, wysokosc, szerokosc, dlugosc) {
+            this.rok = rok;
+            this.wojna = wojna;
+            this.pancerz = pancerz;
+            this.wysokosc = wysokosc;
+            this.szerokosc = szerokosc;
+            this.dlugosc = dlugosc;
+            this.nazwa = nazwa;
+            this.wypiszkota = function (rasa, wiek, kolor) {
+            this.rasa = rasa;
+            this.wiek = wiek;
+            this.kolor = kolor;
+           
+        }
+            this.show = function()
+            {
+                document.write(this.nazwa+": <br>rok produkcji:" + this.rok + "<br> dlugosc: " + this.dlugosc + "<br>szerokosc: " + this.szerokosc + "<br>wysokosc: " + this.wysokosc + "<br>udział w wojnie: " + this.wojna + "<br>pancerz: " + this.pancerz + "<br>")
+                document.write("kot rasy"+this.rasa + " jest koloru "+ this.kolor+" i ma "+ this.wiek+ " lata <br>")
+            }
+        }
+        
+        perski = new wypiszkota("perski", 4, "czarny");
+        brytan = new wypiszkota("brytyjski", 4, "szary");
+        sfinks = new wypiszkota("sfinks", 3, "szary");
+        ragdoll = new wypiszkota("ragdoll", 6, "szary");
+        syjam = new wypiszkota("syjamski", 4, "czarny");
+        tiger1 = new czolg("tiger1", "1942", "2 wojna światowa", "25-120", "2.93", "3.7", "8.45");
+        tiger2 = new czolg("tiger2", 1944, "2 wojna światowa", "25-180", "3.9", "3.7", "10.286");
+        mark1 = new czolg("mark1", 1916, "1 wojna światowa", "6-12", "2.45", "4.19", "7.93");
+        litlewille = new czolg("litlewille",1915, "2 wojna światowa", "25-120", "2.93", "3.7", "8.45");
+        tiger13 = new czolg("tiger13",1943, "2 wojna światowa", "25-120", "2.93", "3.7", "8.45");
+        
+       
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="czolgi" onclick="tiger1.czolg()">
+    <tnput type="button" value="koty" onclick="perski.czolg()">
+</body>
