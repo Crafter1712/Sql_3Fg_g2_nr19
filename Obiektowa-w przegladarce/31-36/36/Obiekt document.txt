@@ -1,0 +1,5 @@
+Obiekt document
+•	Zawiera informacje o bieżącym dokumencie HTML. 
+•	Poprzez jego właściwości document  mamy wpływ  na  elementy  strony  (np.  kolor  tła,  kolor  czcionki).  
+•	Metody  document write umożliwia  wyświetlenie np. tekstu w oknie przeglądarki.
+Koniec teorii
