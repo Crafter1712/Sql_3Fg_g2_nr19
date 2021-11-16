@@ -1,0 +1,31 @@
+<Html>
+    <body>
+        <h1 id="id1">Niebieski</h1>
+        <h2 id="id2">czerwony</h2>
+        <h3 id="id2">zielony</h3>
+
+        <h1 onclick="changeText(this)">Click on yhe text</h1>
+        <script>
+            function changeText(id){
+                id.innerHTML = "Tak zmienia się tekst";
+            }
+        </script>
+        <Button type="button" onclick="document.getElementById('id1').style.color = 'red'">Tey it</Button>
+    </br>
+    <button type="button" onclick="document.getElementById('id2').style.color = 'blue'">trick</button>
+</br></br></br></br></br></br></br></br>
+    <img src=
+    "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-6.png"
+                     onclick="enlargeImg(this)" />
+                     <script>
+                        // Function to increase image size
+                        function enlargeImg(img) {
+                            img.style.transform = "scale(1.5)";
+                            img.style.transition =
+                              "transform 0.25s ease";
+                        }
+                    </script>
+
+
+    </body>
+</Html>

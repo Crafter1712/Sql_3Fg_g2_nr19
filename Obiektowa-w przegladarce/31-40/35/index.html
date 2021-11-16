@@ -1,0 +1,39 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+<head>
+<script type="text/javascript">
+function wyswietlDate(){
+    var Today = new Date();
+    var Month = (Today.getMonth()+1);
+    var Day = Today.getDate();
+    var Year = Today.getFullYear();
+       if(Year <= 99)    Year += 1900
+    return  Day + "-" + Month + "-" + Year;
+}
+function showsysteminfo()
+{
+    var agent = navigator.userAgent.toLowerCase();
+    var nazwa = "nieznany";
+    if(agent.indexOf('windows') != -1)   {nazwa = "Windows";}
+    if(agent.indexOf('linux') != -1)         {nazwa = "Linux";}
+    else if(agent.indexOf('mac') != -1)   {nazwa = "MacOS";}
+        
+    document.write("Przeglądarka = "+navigator.appName+"<br>")
+    document.write("Wersja przegladarki = "+navigator.appVersion+"<br>")
+    document.write("Wszystkiedane przegladarki = " +navigator.userAgent+"<br>")
+    document.write("Twój system to: " + nazwa +"<br>")
+    document.write("System operacyjny = "+navigator.onLine+"<br>")
+    document.write("Obsluga Java = "+navigator.javaEnabled()+"<br>")
+}
+</script>
+</head>
+<body>
+ <script type="text/javascript">
+       document.write("Oskar Skaliński ");
+       document.write("Dzisiaj jest " + wyswietlDate()+"<br>");
+       document.write(showsysteminfo());
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html lang="pl">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+
+</head>
+<body>
+    <script type="text/javascript">
+        var agent = navigator.userAgent.toLowerCase();
+        var nazwa = "nieznany";
+        document.write("pierwszy sposób<br>")
+        document.write("mam przeglądarkę=  "+navigator.appName);
+        document.write("<br>drugi sposób<br>")
+        if((navigator.appName=="Firefox") && (parseInt(navigator.appVersion)>=3))
+            { document.write("mam przeglądarkę="+navigator.appName);} 
+            else 
+           {document.write("Masz niewłaściwą wersję przeglądarki!!!");}
+
+    </script>
+</body>
+
+</html>

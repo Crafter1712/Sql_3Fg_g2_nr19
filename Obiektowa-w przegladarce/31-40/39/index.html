@@ -1,0 +1,33 @@
+<html>
+     <head>
+            <title>Przykład nr tutaj wpisz odpowiedni numer oraz nazwisko </title>
+          <script language="JavaScript">
+             function ZSE_Open() 
+               {setTimeout(ZSE_Open,6000);
+                  window.location = "http://zse.gda.pl";               
+               }
+        
+             function OKE_Open() 
+               {setTimeout(OKE_Open,2000);
+                  window.location = "http://oke.gda.pl";
+               }
+             function WP_Open()
+            {setTimeout(WP_Open,10000);
+               window.location = "http://www.wp.pl"
+            }
+             function odsieżanie()
+             {setTimeout(odsieżanie,8000);
+            window.setInterval(location.reload(true))
+            }
+            
+          </script>
+      </head>
+<body>
+   <form>
+        <input type="button" name="przycisk1" value="Strona ZSE" onclick="setTimeout(ZSE_Open,6000)">
+        <input type="button" name="przycisk2" value="Strona OKE" onclick="setTimeout(OKE_Open,2000)">
+        <input type="button" name="przycisk3" value="Strona WP"  onclick="setTimeout(WP_Open,10000)">
+        <input type="button" name="przycisk4" value="odsieżanie" onclick="setTimeout(odsieżanie,8000)">
+    </form>
+</body>
+</html>
