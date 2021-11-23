@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="text/javascript">
+var tekst =prompt ("Obiekty języka JavaScript");
+var dl = tekst.length
+var x = tekst.substring(0,4);
+var x1 = tekst.toLowerCase();
+var x2 = tekst.toUpperCase();
+var tx1 = tekst;
+var data = new Date();
+var data1 = new Date(2018,1,2);
+String.prototype.duzaLitera = function() { return this.charAt(0).toUpperCase() + this.substr(1);}
+
+
+document.write("liczba liter w zmiennej tekst "+dl+"<br><br>");
+document.write("zakres ciagu od 0 do 4 = "+x+"<br><br>");
+document.write("Zmiena na male = "+x1+"<br><br>");
+document.write("zmiana na duze"+x2+"<br><br>");
+document.write("pierwsza litera z duzej "+tx1.duzaLitera()+"<br><br>");
+document.write("dzis jest "+data.toString()+"<br><br>");
+document.write("data wybrana w kodzie "+data1+"<br><br>");
+document.write("dzis jest "+data.toLocaleString()+"<br><br>");
+document.write("dzis jest "+data.toUTCString()+"<br><br>");
+document.write("data wybrana w kodzie "+data1.toGMTString()+"<br><br>");
+document.write("dzis jest "+data.toDateString()+"<br><br>");
+document.write("dzis jest "+data.toLocaleDateString()+"<br><br>");
+document.write("teraz jest godzina "+data.toTimeString()+"<br><br>");
+document.write("teraz jest godzina"+data.toLocaleTimeString()+"<br><br>");
+</script>
+   
+
+</head>
+<body>
+    
+</body>
+</html>
