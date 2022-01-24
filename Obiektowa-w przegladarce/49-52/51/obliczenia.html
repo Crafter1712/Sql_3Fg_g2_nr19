@@ -1,0 +1,34 @@
+<html>
+    <head>
+        
+        <script type="text/javascript">
+         function dni_stycznia(){
+             
+        var D1_ska=prompt("Dzien_1_stycznia=","");
+		var D2_ska=prompt("Dzien_2_stycznia=","");
+		
+                             var a=parseFloat(D1_ska);
+                             var b=parseFloat(D2_ska);
+		  if(1<=a&&b<=31&&a<b){
+              var czas;
+              czas = (b-a)*86400;
+               document.write("<p style='color: green;font-size: 49px';>")
+		 document.write("Od " +a+ " do " +b+ " minelo: " +czas+ " sekund <br>" );
+          }else{
+              document.write("podano zle dane")
+          }
+         
+         }
+        </script>
+
+         
+      
+
+    </head>
+ <body>
+    
+    <input type="button" onclick="dni_stycznia()" value="Liczmy!" />  
+             
+ </body>
+</html>
+
