@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+<script type="text/javascript">
+    var tab1 = ['styczeń','luty','marzec','kwieceien']
+    function concat(){
+        var i = prompt("ktory parametr chcemy? Od 0-3")
+        document.write(tab1[i])
+    }
+    function pop(){
+        for (i = 0; i<tab1.length; i++)
+{
+    document.write(tab1[i] + "<br>");
+}
+    }
+    function push(){
+        var nowe = prompt("jaki tekst chcesz dodać?")
+        tab1[4] = nowe;
+       
+        for (i = 0; i<tab1.length; i++)
+{
+    document.write(tab1[i] + "<br>");
+}
+    }
+</script>
+</head>
+<body>
+    <input type="button" onclick="concat();" value="concat">
+    <input type="button" onclick="pop();" value="pop">
+    <input type="button" onclick="push();" value="push">
+</body>
+</html>
