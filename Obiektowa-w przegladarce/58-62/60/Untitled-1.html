@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+   <script type="text/javascript">
+       function masno(a, b) {
+            return a - b
+        }
+        let array = ["a", "z", "d", "so", 2, 1, 3, 7,]
+        let sortedWrongly = ((array.sort()).sort(masno))
+        let liczby = []
+        let i = 0
+        while (i < sortedWrongly.length) {
+            if (typeof (sortedWrongly[i]) == "string") {
+                console.log(i)
+                sortedWrongly.splice(0, i)
+                break
+            }
+            else {
+                liczby[i] = sortedWrongly[i]
+                i++
+            }
+        }
+        let sortedCorrectly = sortedWrongly.concat(liczby)
+        //document.write(array + "<br>")
+        //document.write(liczby + "<br>")
+        document.write(sortedCorrectly + "<br>")
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

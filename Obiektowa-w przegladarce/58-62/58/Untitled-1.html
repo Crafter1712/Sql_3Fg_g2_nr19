@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+   <script type="text/javascript">
+       var Tablica_Z = [];
+Tablica_Z[0] =  ['Anna', 'Nowak'];
+Tablica_Z[1] =  ['Adam', 'Kowal'];
+Tablica_Z[2] =  ['Piotr', 'Ogórek'];
+Tablica_Z[3] =  ['Ewa', 'Lisowska'];
+document.write('imię: ' + Tablica_Z[0][0] + 'nazwisko: ' + Tablica_Z[0][1] + "<br>");
+document.write('imię: ' + Tablica_Z[1][0] + 'nazwisko: ' + Tablica_Z[1][1] + "<br>");
+document.write('imię: ' + Tablica_Z[2][0] + 'nazwisko: ' + Tablica_Z[2][1] + "<br>");
+document.write('imię: ' + Tablica_Z[3][0] + 'nazwisko: ' + Tablica_Z[3][1]);
+document.write('<br>')
+var Tablica = new Array('Anna', 'Adam', 'Piotr');
+document.write(Tablica.join()  + "<br>");  /*odzielający znak , (przecinek) */
+document.write(Tablica.join(" - ") + "<br>"); /*odzielający znak -(minus) */
+document.write('<br>')
+var Tablica1 = new Array('Anna', 'Adam', 'Piotr');
+document.write(Tablica1.join()  + "<br>");
+Tablica1.reverse()
+document.write(Tablica1.join() + "<br>");
+document.write('<br>')
+var Tablica_sort = new Array('Paweł', 'Anna', 'Maria', 'Adam', 'Piotr');
+Tablica_sort.sort()
+document.write(Tablica_sort.join());
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>
