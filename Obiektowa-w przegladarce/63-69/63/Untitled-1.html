@@ -1,0 +1,31 @@
+<html>
+ <body>
+	
+	   
+     <font color='black'>           
+    
+	<label for="wybor">sprawdz:</label>
+
+    <input type="text" id="wybor">
+    <input type="button" onclick="kolor()" value="check">
+     </font>
+     <script language="JavaScript">
+        style="color:red;font-size:50px;"
+       document.write("<font color='green'>Menu<br><br>");
+       document.write("<font color='red'>1-czerwony<br>");
+       document.write("<font color='blue'>2-niebieski<br>");
+           
+           
+       var wybor=parseInt(document.getElementById('wybor').value)
+       function kolor()
+       {
+           if (wybor==1) {
+           document.write("<font color='red'><font size='7px'>wczytales kolor czerwony")
+          }else if(wybor==2) {
+           document.write("<font color='red'><font size='1px'>wczytales kolor niebieski")
+          }
+
+       }
+                 </script>
+ </body>
+</html>
